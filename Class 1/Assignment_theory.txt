@@ -58,3 +58,17 @@ The opposite of cross-origin requests is same-origin requests. This means that a
 
  in defer mode HTML parsing and script fetch will go paraelly and once HTML parsing is done then only 
  executing of script will start
+
+
+PS- defer works on external script only
+
+This attribute must not be used if the src attribute is absent (i.e. for inline scripts),
+in this case it would have no effect.
+
+To achieve a similar effect for dynamically inserted scripts use async=false instead. 
+Scripts with the defer attribute will execute in the order in which they appear in the document.
+
+Also,
+
+Scripts without async or defer attributes, as well as inline scripts, are fetched and executed 
+immediately, before the browser continues to parse the page.

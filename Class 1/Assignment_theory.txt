@@ -1,0 +1,60 @@
+1.) What is Emmet
+Ans.) Emmet is  the piece of pre written code (generally boiler plate) attached with an annotation
+and when we use that annotation it replaces it with that code.
+
+
+2.)Diff between library and Framework
+ans.)library is only focussed on certain part which its responsible for and framework is more like
+consisting many pkgs,libraries and all to provide much broader utilities
+
+Ex-  React does the UI part but for routing we need to install router whereas in Angular it comes
+with router,directives etc etc
+
+
+3.What is CDN and how do we use it ?
+ans.)CDN is COntent delivery Network which is  group of servers which work together to provide internet 
+content fast
+
+and the reason we use it are reliability,cost saving, fast speed
+
+
+for example my website is hosted in Bhilai,C.G and user is browsing it near that state it will be fast
+but what if someone from US is trying to access it , the speed will be slow therefore one server will be 
+placed near US to provide better speed to users browisng near US
+
+
+4. Why is React known as React?
+ans.) it ability to Reacts to the change in data
+
+5.What is diference between React and ReactDOM
+ans.) React is for creating views and ReactDOM is for rendering UI
+
+
+6.)What is difference between react.development.js and react.production.js files via CDN?
+ans.) prod files are more optimized and minified than dev files 
+therefore if u r using it in local use dev, but on client machine use prod since prod files are faster
+
+
+
+
+7.)What is crossorigin in script tag?
+ans.)The crossorigin attribute sets the mode of the request to an HTTP CORS Request.
+Web pages often make requests to load resources on other servers. Here is where CORS comes in
+
+The opposite of cross-origin requests is same-origin requests. This means that a web page can only
+ interact with other documents that are also on the same server. 
+
+
+
+ 8.) async vs defer
+
+ there r 3 type normal,async,defer in script tag
+ in normal type HTML parsing will go on until it finds script tag and it will fetch script and then
+ exexute, while feching and executing of script the HTML parsing will be on hold and once execution 
+ is done HTML parsing will resume
+
+ in async mode HTML parsing and fetching of script goes parallely and once fetching is done HTML parsing
+ will be on hold and executing of script will go on , once done HTML parsing will resume
+
+ in defer mode HTML parsing and script fetch will go paraelly and once HTML parsing is done then only 
+ executing of script will start

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+</head>
+<body>
+    <div style="color:green" id="root">
+        <h1> Namaste People</h1>
+    </div>
+    <div style="color:red" id="root1">
+
+    </div>
+
+   
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <!-- const header = document.createElement('h1')
+        header.innerHTML="Kaise ho Bhai log"
+        const root = document.getElementById('root1')
+        root.append(header)
+   -->
+
+   <script>
+    const headerValue = React.createElement('h1',{},"kaise hoi bhailog")
+    console.log("header",headerValue)
+    const root = ReactDOM.createRoot(document.getElementById('root1'))
+    console.log("root",root)
+    const root1 = ReactDOM.createRoot(document.getElementById('root'))
+    root.render(headerValue)
+    root1.render(headerValue)
+   </script>
+    
+</body>
+</html>
